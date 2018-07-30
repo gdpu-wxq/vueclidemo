@@ -1,20 +1,26 @@
 <template>
   <Page style="background-color:cadetblue;">
-    发现
+    <x-header style="background-color:#fff;" :left-options="{showBack: false}"><span style="color:#000">发现</span></x-header>
   </Page>
 </template>
 
 <script>
 import { Page } from 'custom-ui'
+import { XHeader } from 'vux'
 
 export default {
   name: 'Discovery',
   components: {
-    Page
+    Page,
+    'x-header': XHeader
   },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      menus: {
+        menu1: 'Take Photo',
+        menu2: 'Choose from photos'
+      }
     }
   }
 }

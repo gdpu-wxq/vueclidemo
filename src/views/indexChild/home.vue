@@ -1,16 +1,18 @@
 <template>
   <Page style="background-color: gold">
-    首页
+    <x-header style="background-color:#fff;" :left-options="{showBack: false}"><span style="color:#000">首页</span></x-header>
   </Page>
 </template>
 
 <script>
 import {Page} from 'custom-ui'
+import { XHeader } from 'vux'
 
 export default {
   name: 'Home',
   components: {
-    Page
+    Page,
+    'x-header': XHeader
   },
   data () {
     return {
