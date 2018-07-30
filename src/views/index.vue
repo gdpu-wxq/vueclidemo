@@ -19,7 +19,7 @@
 </template>
 
 <script>
-  import { Tabbar, TabbarItem } from 'vux';
+import {Tabbar, TabbarItem} from 'vux'
 export default {
   name: 'index',
   components: {
@@ -42,7 +42,8 @@ export default {
     margin: 0;
     padding: 0;
   }
-  .index-container{
+
+  .index-container {
     height: calc(100vh - 50px);
     overflow: scroll;
   }

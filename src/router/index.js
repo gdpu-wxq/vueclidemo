@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 // 引入页面组件，对应 @/views/
-const _import = require('./_import_' + process.env.NODE_ENV);
+const _import = require('./_import_' + process.env.NODE_ENV)
 
 Vue.use(Router)
 
@@ -12,7 +12,7 @@ export default new Router({
       path: '/',
       name: 'index',
       component: _import('index'),
-      children:[
+      children: [
         {
           path: '/',
           name: 'Home',
