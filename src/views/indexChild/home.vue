@@ -27,7 +27,7 @@
 <script>
 import {Page} from 'custom-ui'
 import { XHeader, Icon, Swiper, Flexbox, FlexboxItem, ViewBox } from 'vux'
-import homeIconData from '@/mock/homeIconData';
+import homeIconData from '@/mock/homeIconData'
 import P1 from '@/assets/ad/p1.png'
 import P2 from '@/assets/ad/p2.png'
 import P3 from '@/assets/ad/p3.png'
@@ -35,12 +35,12 @@ import P5 from '@/assets/ad/p5.png'
 import P6 from '@/assets/ad/p6.png'
 import newComerItem from '@/views/indexChild/components/newComerItem'
 
-const imgList = [P1, P2, P3];
+const imgList = [P1, P2, P3]
 
 const demoList = imgList.map((one, index) => ({
   url: 'javascript:',
   img: one
-}));
+}))
 
 export default {
   name: 'Home',
@@ -51,31 +51,30 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App',
       demo03_list: demoList,
-      homeIconData:homeIconData.data,
-      P5:P5,
-      P6:P6
+      homeIconData: homeIconData.data,
+      P5: P5,
+      P6: P6
     }
   },
-  methods:{
-    showConfirm(message, title){
-      var buttons=['确认','取消'];
-      plus.nativeUI.confirm(message,function(e){
-        var i = e.index;
-        if(i>=0){
-          if(i==0){
-            //确认
-            console.log('确认');
+  methods: {
+    showConfirm (message, title) {
+      var buttons = ['确认', '取消']
+      plus.nativeUI.confirm(message, function (e) {
+        var i = e.index
+        if (i >= 0) {
+          if (i === 0) {
+            // 确认
+            console.log('确认')
           } else {
-            //取消
-            console.log('取消');
+            // 取消
+            console.log('取消')
           }
-
         } else {
-          //后退键
-          console.log('后退键');
+          // 后退键
+          console.log('后退键')
         }
-      },title,buttons);
-    },
+      }, title, buttons)
+    }
   }
 }
 </script>

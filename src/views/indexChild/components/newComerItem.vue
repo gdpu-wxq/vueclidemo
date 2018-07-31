@@ -17,18 +17,18 @@
 </template>
 
 <script>
-  import {Flexbox, FlexboxItem} from 'vux'
+import {Flexbox, FlexboxItem} from 'vux'
 
-  export default {
-    name: 'NewComerItem',
-    props: {},
-    components: {
-      Flexbox, FlexboxItem
-    },
-    data() {
-      return {};
-    },
+export default {
+  name: 'NewComerItem',
+  props: {},
+  components: {
+    Flexbox, FlexboxItem
+  },
+  data () {
+    return {}
   }
+}
 </script>
 
 <style scoped>
