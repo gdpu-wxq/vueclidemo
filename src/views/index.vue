@@ -1,7 +1,7 @@
 <template>
   <div class="main-container">
     <router-view class="index-container"></router-view>
-    <Tabbar style="position: fixed">
+    <Tabbar style="position: fixed;background-color: #ffffff">
       <tabbar-item selected link="/">
         <span slot="label">首页</span>
       </tabbar-item>
