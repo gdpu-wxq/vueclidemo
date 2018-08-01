@@ -20,13 +20,14 @@
         <img class="img" :src="P6" alt="">
       </div>
       <new-comer-item style="margin-top: 8px"></new-comer-item>
+      <divider style="padding: 24px 48px;color: #bbb">团贷网，让金融更简单</divider>
     </viewBox>
   </Page>
 </template>
 
 <script>
 import {Page} from 'custom-ui'
-import { XHeader, Icon, Swiper, Flexbox, FlexboxItem, ViewBox } from 'vux'
+import { XHeader, Icon, Swiper, Flexbox, FlexboxItem, ViewBox, Divider } from 'vux'
 import homeIconData from '@/mock/homeIconData'
 import P1 from '@/assets/ad/p1.png'
 import P2 from '@/assets/ad/p2.png'
@@ -45,7 +46,7 @@ const demoList = imgList.map((one, index) => ({
 export default {
   name: 'Home',
   components: {
-    Page, Icon, XHeader, Swiper, Flexbox, FlexboxItem, newComerItem, ViewBox
+    Page, Icon, XHeader, Swiper, Flexbox, FlexboxItem, newComerItem, ViewBox, Divider
   },
   data () {
     return {

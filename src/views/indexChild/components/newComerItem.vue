@@ -1,10 +1,10 @@
 <template>
   <div class="item">
     <label class="label-tip">新手专享</label>
-    <p style="padding-top: 8px">新手专享</p>
+    <p style="padding-top: 24px">新手专享</p>
     <span class="tip">新手专享</span>
     <p style="font-size: 32px;padding-top: 16px;color: orangered">11%</p>
-    <flexbox style="background-color: #ffffff" :gutter="0">
+    <flexbox style="background-color: #ffffff;padding: 8px 0px" :gutter="0">
       <flexbox-item class="vux-1px-r text-align-center" :span="3">3个月</flexbox-item>
       <flexbox-item class="vux-1px-r text-align-center" :span="5">剩余465.14万元</flexbox-item>
       <flexbox-item class="text-align-center" :span="4">100元起购</flexbox-item>
