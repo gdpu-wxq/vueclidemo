@@ -1,11 +1,11 @@
 <template>
   <Page style="background-color: #F7F7FA">
-    <x-header style="background-color:#fff;position: fixed;z-index: 100;width: 100%" :left-options="{showBack: false}" >
+    <x-header style="background-color:#fff;" :left-options="{showBack: false}" >
       <a slot="left"><i class="iconfont icon-tongzhi"></i></a>
       <span style="color:#000" @click="showConfirm('aaa','bbb')">团贷网</span>
       <a slot="right"><i class="iconfont icon-kefu"></i></a>
     </x-header>
-    <viewBox style="margin-top: 46px">
+    <viewBox>
       <swiper :list="demo03_list" auto style="width:100%;margin:0 auto;" height="160px" :show-dots="false" :show-desc-mask="false"></swiper>
       <flexbox style="background-color: #ffffff">
         <flexbox-item  v-for="(item,i) in homeIconData" :key="i">

@@ -10,7 +10,6 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'index',
       component: _import('index'),
       children: [
         {
@@ -34,6 +33,21 @@ export default new Router({
           component: _import('indexChild/mine')
         }
       ]
+    },
+    {
+      path: '/camera',
+      name: 'Camera',
+      component: _import('h5plus/camera')
+    },
+    {
+      path: '/messaging',
+      name: 'Messaging',
+      component: _import('h5plus/messaging')
+    },
+    {
+      path: '/share',
+      name: 'Share',
+      component: _import('h5plus/share')
     }
   ]
 })
