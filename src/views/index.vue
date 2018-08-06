@@ -29,28 +29,31 @@
 </template>
 
 <script>
-  import {Tabbar, TabbarItem} from 'vux'
-  export default {
-    name: 'index',
-    components: {
-      Tabbar,
-      TabbarItem
-    },
-    data() {
-      return {
-        msg: 'Welcome to Your Vue.js App',
+import {Tabbar, TabbarItem} from 'vux'
+export default {
+  name: 'index',
+  components: {
+    Tabbar,
+    TabbarItem
+  },
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
 
-      }
-    },
-    mounted:function(){
-      this.init();
-    },
-    methods:{
-      init(){
-        console.log(this.$route.path);
-      }
+    }
+  },
+  mounted: function () {
+    this.init()
+  },
+  methods: {
+    init () {
+      console.log(this.$route.path)
+      this.axios.get('https://raw.githubusercontent.com/gdpu-wxq/Tools/master/version.json').then((response) => {
+        console.log(response.data)
+      })
     }
   }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

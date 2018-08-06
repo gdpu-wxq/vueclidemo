@@ -10,7 +10,16 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      // '/api': {
+      //   target:'http://www.wsqsl.cn',
+      //   //http://114.55.42.237:9696--http://192.168.253.43:8889
+      //   changeOrigin:true,
+      //   pathRewrite: {
+      //     '^http://localhost:8080': 'http://www.wsqsl.cn',
+      //   }
+      // }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
