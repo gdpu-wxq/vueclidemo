@@ -1,17 +1,17 @@
 <template>
   <div class="item">
     <label class="label-tip">新手专享</label>
-    <p style="padding-top: 24px">新手专享</p>
-    <span class="tip">新手专享</span>
-    <p style="font-size: 32px;padding-top: 16px;color: orangered">11%</p>
+    <p class="text-align-center" style="padding-top: 24px">新手专享</p>
+    <p class="text-align-center"><span class="tip">新手专享</span></p>
+    <p class="text-align-center" style="font-size: 32px;padding-top: 16px;color: orangered">11%</p>
     <flexbox style="background-color: #ffffff;padding: 8px 0px" :gutter="0">
       <flexbox-item class="vux-1px-r text-align-center" :span="3">3个月</flexbox-item>
       <flexbox-item class="vux-1px-r text-align-center" :span="5">剩余465.14万元</flexbox-item>
       <flexbox-item class="text-align-center" :span="4">100元起购</flexbox-item>
     </flexbox>
     <div class="button">
-      <p style="color: #ffffff;line-height: 14px;">加入服务</p>
-      <span style="color: #ffffff;font-size: 10px; margin-top: -1px; display: block;">已加入94人</span>
+      <p style="color: #ffffff;line-height: 14px;text-align: center">加入服务</p>
+      <p class="text-align-center"><span style="color: #ffffff;font-size: 10px; margin-top: -1px; display: block;">已加入94人</span></p>
     </div>
   </div>
 </template>
