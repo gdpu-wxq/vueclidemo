@@ -3,7 +3,7 @@
     <x-header style="background-color:#fff;" :left-options="{showBack: false}" :right-options="{showMore: true}" @on-click-more="showMenus = true"><span style="color:#000">我</span></x-header>
     <viewBox style="padding: 1px 0px;background-color: #eeeeee">
       <group>
-        <cell title="version" :value="123456"></cell>
+        <cell title="version" :value="version"></cell>
       </group>
     </viewBox>
     <div v-transfer-dom>

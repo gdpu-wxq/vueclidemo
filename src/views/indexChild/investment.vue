@@ -10,6 +10,7 @@
       <Box style="background-color: #ffffff;padding: 8px">
         <x-button type="primary" @click.native="gotoH5Plus('/camera')">照相</x-button>
         <x-button type="primary" @click.native="gotoH5Plus('/messaging')">通讯</x-button>
+        <x-button type="primary" @click.native="gotoWebview">mui-ui</x-button>
       </Box>
     </viewBox>
   </Page>
@@ -44,6 +45,10 @@ export default {
       this.$router.push({
         path: url
       })
+    },
+    gotoWebview(){
+      var w = plus.webview.create('http://www.dcloud.io/hellomui/');
+      w.show(); // 显示窗口
     }
   }
 }
