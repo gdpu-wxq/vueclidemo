@@ -47,7 +47,8 @@ export default {
       })
     },
     gotoWebview(){
-      plus.webview.open('http://www.dcloud.io/hellomui/')
+      let webview=plus.webview.create('http://www.dcloud.io/hellomui/',{autoBackButton:true});
+      webview.show()
     }
   }
 }
