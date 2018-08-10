@@ -47,8 +47,7 @@ export default {
       })
     },
     gotoWebview(){
-      var w = plus.webview.create('http://www.dcloud.io/hellomui/');
-      w.show(); // 显示窗口
+      plus.webview.open('http://www.dcloud.io/hellomui/')
     }
   }
 }
